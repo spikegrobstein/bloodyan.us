@@ -21,13 +21,13 @@ function anal_drippage() {
         color: 'red'
     });
     
-    $(drip).show(250, 'easeInQuad')
-    .animate({
-        top: $(drip).position().top + 150 + 'px',
-        opacity: '0'
-    }, 1000, 'easeInQuint', function() {
-        drip.remove();
-    });
+    $(drip).show()
+        .animate({
+            top: $(drip).position().top + 150 + 'px',
+            opacity: '0'
+        }, 1000, 'easeInQuint', function() {
+            drip.remove();
+        });
     
     setTimeout(anal_drippage, 750 * Math.random());
 }
