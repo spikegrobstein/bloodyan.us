@@ -6,22 +6,23 @@ $(function() {
 });
 
 function anal_drippage() {
-    var drip = $('<img style="display:none;" class="drip" src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Red_drop.svg" />');
+    var drip = $('<div style="display:none;" class="drip">&bull;</div>');
     
     $('body').append(drip);
     
     anus_p = $(anus).position();
-    drip_top = $(anus).height() * .64 / 2;
+    drip_top = $(anus).height() * .45 / 2;
     drip_left = $(anus).width() / 2 - $(drip).width() / 2;
     
     drip.css({
         position: 'absolute',
-        top: drip_top - $(drip).height() * ((Math.random() - .5) * 3),
-        left: drip_left - $(drip).width() * ((Math.random() - .5) * 3),
+        top: drip_top - $(drip).height() * ((Math.random() - .5) * .5),
+        left: drip_left - $(drip).width() * ((Math.random() - .5) * 2),
         color: 'red'
     });
     
-    $(drip).show(250, 'easeInQuad').animate({
+    $(drip).show(250, 'easeInQuad')
+    .animate({
         top: $(drip).position().top + 150 + 'px',
         opacity: '0'
     }, 1000, 'easeInQuint', function() {
