@@ -1,0 +1,30 @@
+body {
+  font: 75% "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+  background-color: #fec;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#anus {
+  font-size: 75em;
+  color: red;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: -25px;
+  opacity: 0.2;
+  
+}
+
+.drip {
+  width: 48px;
+  height: 48px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
