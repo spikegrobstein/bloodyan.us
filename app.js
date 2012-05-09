@@ -11,7 +11,7 @@ function anal_drippage() {
     $('body').append(drip);
     
     anus_p = $(anus).position();
-    drip_top = $(anus).height() * .68 / 2;
+    drip_top = $(anus).height() * .64 / 2;
     drip_left = $(anus).width() / 2 - $(drip).width() / 2;
     
     drip.css({
