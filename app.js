@@ -6,7 +6,7 @@ $(function() {
 });
 
 function anal_drippage() {
-    var drip = $('<img class="drip" src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Red_drop.svg" />');
+    var drip = $('<img style="display:none;" class="drip" src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Red_drop.svg" />');
     
     $('body').append(drip);
     
@@ -21,7 +21,7 @@ function anal_drippage() {
         color: 'red'
     });
     
-    drip.animate({
+    $(drip).show(250, 'easeInQuad').animate({
         top: $(drip).position().top + 150 + 'px',
         opacity: '0'
     }, 1000, 'easeInQuint', function() {
