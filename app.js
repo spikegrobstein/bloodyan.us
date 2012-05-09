@@ -24,7 +24,7 @@ function anal_drippage() {
     drip.animate({
         top: $(drip).position().top + 150 + 'px',
         opacity: '0'
-    }, 1000, function() {
+    }, 1000, 'easeInQuint', function() {
         drip.remove();
     });
     
