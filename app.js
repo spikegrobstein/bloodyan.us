@@ -1,5 +1,7 @@
+var anus;
+
 $(function() {
-    var anus = $('#anus');
+    anus = $('#anus');
     
     throbbing_anus();
     anal_drippage();
