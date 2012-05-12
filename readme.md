@@ -1,6 +1,6 @@
 # bloodyan.us
 
-This is the code for (bloodyan.us)[http://bloodyan.us].
+This is the code for [bloodyan.us](http://bloodyan.us).
 
 You know... as a goof...
 
