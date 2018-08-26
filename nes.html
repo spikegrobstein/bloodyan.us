@@ -85,21 +85,25 @@
 
       canvas.addEventListener('mousedown', (e) => {
         nes.buttonDown(1, jsnes.Controller.BUTTON_A)
+        e.preventDefault();
         return false;
       });
 
       canvas.addEventListener('mouseup', (e) => {
         nes.buttonUp(1, jsnes.Controller.BUTTON_A)
+        e.preventDefault();
         return false;
       });
 
       canvas.addEventListener('touchstart', (e) => {
         nes.buttonDown(1, jsnes.Controller.BUTTON_A)
+        e.preventDefault();
         return false;
       });
 
       canvas.addEventListener('touchend', (e) => {
         nes.buttonUp(1, jsnes.Controller.BUTTON_A)
+        e.preventDefault();
         return false;
       });
 
