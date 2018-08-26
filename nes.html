@@ -83,6 +83,22 @@
 
       nes.loadROM(romData);
 
+      canvas.addEventListener('mousedown', (e) => {
+        nes.buttonDown(1, jsnes.Controller.BUTTON_A)
+      });
+
+      canvas.addEventListener('mouseup', (e) => {
+        nes.buttonUp(1, jsnes.Controller.BUTTON_A)
+      });
+
+      canvas.addEventListener('touchstart', (e) => {
+        nes.buttonDown(1, jsnes.Controller.BUTTON_A)
+      });
+
+      canvas.addEventListener('touchend', (e) => {
+        nes.buttonUp(1, jsnes.Controller.BUTTON_A)
+      });
+
       function nesLoop() {
         nes.frame();
         window.requestAnimationFrame(nesLoop);
