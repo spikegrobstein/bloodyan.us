@@ -20,6 +20,7 @@ steps:
     image: docker.home.spike.cx/node-buildbox:12.x
     commands:
       - npm run build
+      - tree dist
 
   - name: deploy
     image: docker.home.spike.cx/node-buildbox:12.x
@@ -28,7 +29,7 @@ steps:
       - echo "$SSH_KEY" > ~/.ssh/id_rsa
       - echo ~/.ssh/id_rsa
       - chmod 600 ~/.ssh/id_rsa
-      - echo "will deploy"
+      - rsync --delete -avz dist/ spike@bloodyan.us:web/sites/bloodyanus/public/
     environment:
       SSH_KEY:
         from_secret: SSH_KEY
