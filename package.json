@@ -1,0 +1,32 @@
+{
+  "name": "bloodyan.us",
+  "version": "1.0.0",
+  "description": "Website for bloodyan.us",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spikegrobstein/bloodyan.us.git"
+  },
+  "author": "Spike Grobstein <me@spike.cx>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spikegrobstein/bloodyan.us/issues"
+  },
+  "homepage": "https://github.com/spikegrobstein/bloodyan.us#readme",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "jquery-ui": "^1.12.1"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.2",
+    "html-webpack-plugin": "^4.0.4",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
