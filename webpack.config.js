@@ -22,14 +22,14 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'Bloodyan.us',
-      filename: 'nes.html',
+      filename: 'nes/index.html',
       template: './src/html/nes.html.ejs',
       chunks: [
         'nes',
       ],
     }),
     new CopyPlugin([
-      { from: './src/bloodya.nes', to: 'bloodya.nes' },
+      { from: './src/bloodya.nes', to: 'nes/bloodya.nes' },
     ]),
     new CleanWebpackPlugin(),
   ],
