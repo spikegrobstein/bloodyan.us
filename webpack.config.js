@@ -7,12 +7,24 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/js/index.js',
-    nes: './src/js/bloodya.nes.js'
+    nes: './src/js/nes.js'
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Bloodyan.us',
-      template: './src/html/index.html.ejs'
+      filename: 'index.html',
+      template: './src/html/index.html.ejs',
+      chunks: [
+        'index',
+      ],
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Bloodyan.us',
+      filename: 'nes.html',
+      template: './src/html/nes.html.ejs',
+      chunks: [
+        'nes',
+      ],
     }),
     new CleanWebpackPlugin(),
   ],
@@ -32,7 +44,13 @@ module.exports = {
           'style-loader',
           'css-loader',
         ],
-      }
+      },
+      {
+        test: /\.nes$/,
+        use: [
+          'base64-loader',
+        ],
+      },
     ],
   },
   optimization: {
