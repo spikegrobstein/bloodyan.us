@@ -7,9 +7,9 @@ clone:
 
 steps:
   - name: preflight
-    image: docker.home.spike.cx/node-buildbox:12.x
+    image: alpine/git
     commands:
-      - chown -R "$( id -u ):$( id -g )" .
+      - chown -R 1000:1000 .
 
   - name: npm
     image: docker.home.spike.cx/node-buildbox:12.x
