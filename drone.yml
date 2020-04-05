@@ -27,7 +27,6 @@ steps:
     commands:
       - mkdir ~/.ssh
       - echo "$SSH_KEY" > ~/.ssh/id_rsa
-      - echo ~/.ssh/id_rsa
       - chmod 600 ~/.ssh/id_rsa
       - rsync --delete -avz dist/ spike@bloodyan.us:web/sites/bloodyanus/public/
     environment:
