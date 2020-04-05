@@ -1,0 +1,15 @@
+body {
+  background-color: #bbb;
+  font-family: monospace;
+  color: black;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+}
+
+a:hover {
+  color: red;
+}
+
