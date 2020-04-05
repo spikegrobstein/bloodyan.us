@@ -38,7 +38,7 @@ module.exports = {
     contentBase: './dist',
   },
   output: {
-    filename: '[name].bundle.js',
+    filename: 'js/[name].js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
