@@ -36,7 +36,7 @@ module.exports = {
       filename: 'css/[name].css',
     }),
   ],
-  devtool: 'inline-source-map',
+  devtool: 'source-map',
   devServer: {
     contentBase: './dist',
   },
@@ -67,3 +67,4 @@ module.exports = {
     },
   },
 };
+
