@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/spikegrobstein/bloodyan.us#readme",
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-ui": "^1.12.1",
     "jsnes": "^1.1.0"
   },
